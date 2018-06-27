@@ -42,7 +42,7 @@ svg.patternlock.error g.lock-actives circle {
     }
 }
 
-#lock {
+svg.patternlock {
     width: 100%;
     height: calc(100% - 15vh);
     padding-bottom: 12vh;

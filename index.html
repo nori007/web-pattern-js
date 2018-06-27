@@ -37,20 +37,27 @@
     <script src="./src/patternlock.js" charset="utf-8"></script>
     <!-- endbuild -->
     <script type="text/javascript">
+        var pl; 
         function startlock() {
             // var e = document.getElementById('lock')
-            var p = new PatternLock(undefined, {
-                onPattern: function() {
-                    this.success()
-                }
-            });
+            // var p = new PatternLock(undefined, {
+            //     onPattern: function() {
+            //         this.success()
+            //     }
+            // });
+            pl = new PatternLock();
         }
-        </script>
+
+        function getPattern() {
+            alert(pl.getPattern());
+        }
+    </script>
 </head>
 
 <body onload='startlock()'>
-    <div id='testDiv'>
+    <div id='testDiv' style="width: 700px;">
     </div>
+    <button onclick="getPattern()">get</button>
 </body>
 
 </html>
