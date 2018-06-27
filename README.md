@@ -1,5 +1,8 @@
 ## 안드로이드 패턴락
  * https://github.com/Tympanix/pattern-lock-js 기반
  * jquery 제거
- * 외부 API 정리 필요
- * 가져가 쓸수있는 형태는 아님. 조금 손봐야함.
+ 
+### 해야될것
+ * 외부 api 정리
+ * pc / mobile 구분하여 이벤트 등록
+ * 기타등등..?
