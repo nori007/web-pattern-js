@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pattern Lock Demo</title>
+    <style media="screen">
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            max-height: 100vh;
+            overflow: hidden;
+        }
+
+        body {
+            font-family: 'Varela Round', sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin: 0;
+            height: 15vh;
+            line-height: 15vh;
+            text-align: center;
+            font-size: 6vh;
+
+        }
+    </style>
+
+    <!-- build:css styles.css -->
+    <link rel="stylesheet" href="./src/patternlock.css">
+    <script src="./src/patternlock.js" charset="utf-8"></script>
+    <!-- endbuild -->
+    <script type="text/javascript">
+        function startlock() {
+            // var e = document.getElementById('lock')
+            var p = new PatternLock(undefined, {
+                onPattern: function() {
+                    this.success()
+                }
+            });
+        }
+        </script>
+</head>
+
+<body onload='startlock()'>
+    <div id='testDiv'>
+    </div>
+</body>
+
+</html>
