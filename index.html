@@ -46,11 +46,16 @@
             //     }
             // });
             pl = new PatternLock();
+            pl.addEventListener('done', function(res) {
+                alert('res: '+ res);
+            })
         }
 
         function getPattern() {
             alert(pl.getPattern());
         }
+
+        
     </script>
 </head>
 
